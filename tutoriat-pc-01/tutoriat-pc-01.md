@@ -6,6 +6,7 @@
 ## Curpins
 * [Introducere](#introducere)
 * [GCC și VSC](#gcc-și-vsc)
+* [Git](#git)
 * [GitHub](#github)
 * [Comenzi de bază în terminal](#comenzi-de-bază-în-terminal)
 * [Comenzi de bază git](#comenzi-de-bază-git)
