@@ -169,5 +169,4 @@ Exemplu: x = 93, b = 7;
 1. Pentru valori întregi citite de la tastatură să se tiparească valoarea corespunzătoare în binar.
 2. Se citesc 2 numere întregi, x și n, unde n este între 0 si 15. Să se afișeze: bitul n din x, numărul x în care se seteaza bitul n, numărul x în care se șterge bitul n, numărul x în care se complementează bitul n.
 3. Fie x și y două numere naturale. Calculați numărul biților din reprezentarea binară internă a numărului x a căror valoare trebuie comutată pentru a obține numărul y.
-4. Fie n un număr natural. Calculați numărul obținut prin inversarea ordinii biților săi. De exemplu, prin inversarea ordinii biților numărului (aici de tipul char) n = 26<sub> (10)</sub> = 00011010<sub>(2)</sub> se va obține numărul 01011000<sub>(2)</sub> = 88<sub>(10)</sub>.
-5. Se citește de la tastatură un număr natural p. Să se determine toate perechile distincte de numere întregi (i,j,k) cu proprietatea că ele pot reprezenta laturile unui triunghi de perimetru p. Folosiți maxim două instrucțiuni for.
+4. Se citește de la tastatură un număr natural p. Să se determine toate perechile distincte de numere întregi (i,j,k) cu proprietatea că ele pot reprezenta laturile unui triunghi de perimetru p. Folosiți maxim două instrucțiuni for.
