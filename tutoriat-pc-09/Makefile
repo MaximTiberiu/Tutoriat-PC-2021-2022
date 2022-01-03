@@ -1,7 +1,7 @@
 all: build memcheck
 
 build: matrice.c
-	gcc -Wall -Wextra matrice.c -o vematricector
+	gcc -Wall -Wextra matrice.c -o matrice
 
 run: matrice
 	./matrice
