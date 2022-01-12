@@ -97,49 +97,20 @@ void print_sup(int **v, int n) {
 0 0  12
 */
 
-// int lin_col_product(int **inf, int **sup, int lin, int col, int num_prod) {
-//     int sum = 0;
-//     for (int i = 0 ; i < num_prod ; i++) {
-//         sum += 
-//     }
-// }
 
-// void product(int **inf, int **sup, int n) {
-//     int rez[n][n];
-//     for (int i = 0 ; i < n ; i++) {
-//         for (int j = 0 ; j < n ; j++) {
-//             rez[i][j] = 0;
-//             for (int k = 0 ; k <= i ; k++) {
-//                 printf("\t%d %d\n", inf[i][k], sup[k][j]);
-//                 rez[i][j] += inf[i][k] * sup[k][j]; 
-//             }
-//             printf("--------------------%d %d %d\n", i, j, rez[i][j]);
-//         }
-//     }
-
-//     for (int i = 0 ; i < n ; i++) {
-//         for (int j = 0 ; j < n ; j++) {
-//             printf("%d ", rez[i][j]);
-//         }
-//         printf("\n");
-//     }
-// }
-
-
-void p(int **a, int **b, int n) {
-    int i, j, k, x;
-    for(i=0; i<n; i++) {
-        for(j=0; j<n; j++) {
-            x = 0;
-            if(i<j) {
-                for(k=0; k<=i; k++)
-                    x+=a[i][k]*b[k][j - k];
+void product(int **inf, int **sup, int n) {
+    for(int i = 0 ; i < n ; i++) {
+        for(int j = 0 ; j < n ; j++) {
+            int prod = 0;
+            if(i < j) {
+                for(int k = 0 ; k <= i ; k++)
+                    prod += inf[i][k] * sup[k][j - k];
             }
             else {
-                for(k=0; k<=j; k++)
-                    x+=a[i][k]*b[k][j - k];
+                for(int k = 0 ; k <= j ; k++)
+                    prod += inf[i][k] * sup[k][j - k];
             }
-            printf("%d ", x);
+            printf("%d ", prod);
         }
         printf("\n");
     }
@@ -180,7 +151,7 @@ int main() {
     print_sup(s, n);
     printf("--------------------\n");
 
-    p(i, s, n);
+    product(i, s, n);
 
     free_matrice(&i, n);
     free_matrice(&s, n);
